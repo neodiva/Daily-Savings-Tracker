@@ -1,0 +1,113 @@
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #f8fafc, #e2e8f0);
+  color: #333;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+h2, h3 {
+  margin-top: 1.5rem;
+  color: #2d3748;
+}
+
+form {
+  margin-top: 1rem;
+}
+
+input[type="number"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  transition: 0.2s;
+}
+
+input[type="number"]:focus {
+  border-color: #4299e1;
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.1s;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+#connectBtn {
+  background-color: #007bff;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+#claimBtn {
+  background-color: #28a745;
+  color: white;
+  margin-top: 1rem;
+}
+
+#logForm button {
+  background-color: #4a90e2;
+  color: white;
+  margin-top: 10px;
+}
+
+#message {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+#walletAddress {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+ul#historyList {
+  list-style: none;
+  margin-top: 1rem;
+  padding-left: 0;
+  text-align: left;
+}
+
+ul#historyList li {
+  padding: 6px 0;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 0.95rem;
+}
+

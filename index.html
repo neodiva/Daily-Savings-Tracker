@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily Savings Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💰 Daily Savings Tracker</h1>
+
+    <div id="walletSection">
+      <button id="connectBtn">🔌 Connect Wallet</button>
+      <p id="walletAddress"></p>
+    </div>
+
+    <h2>🔥 Streak: <span id="streak">0</span> days</h2>
+    <p>Your goal is to save ₹<span id="goal">50</span> daily.</p>
+
+    <form id="logForm">
+      <input type="number" id="amount" placeholder="Enter today's savings ₹" required />
+      <button type="submit">Log</button>
+    </form>
+
+    <p id="message"></p>
+
+    <button id="claimBtn">🎁 Claim NFT</button>
+
+    <h3>📅 History</h3>
+    <ul id="historyList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
